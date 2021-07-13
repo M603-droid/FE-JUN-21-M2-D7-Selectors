@@ -405,7 +405,7 @@
               <li>Nulla vitae elit libero, a pharetra augue.</li>
             </ul>
             <p>
-              Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras
+              Etiam porta <em>sem malesuada magna</em > mollis euismod. Cras
               mattis consectetur purus sit amet fermentum. Aenean lacinia
               bibendum nulla sed consectetur.
             </p>
@@ -488,8 +488,7 @@
         JS Exercises
 
        
-        EX15) Write a function to change the column size for heading in jumbotron
-        EX16) Write a function to remove the "Search" magnifying glass icon
+
         EX17) Write a function to trim just the first 50 characters in the first paragraph for each blog post
         EX18) Write a function and attach it to the "Newer" button, to add new Blog Post (just div and title)
         EX19) Write a function and attach it to the "Older" button, to remove the last Blog Post
@@ -516,9 +515,15 @@
        // EX14) Write a function to remove all the links under "Elsewhere"
        const removeLinks = function() {
             const emptyOl = document.querySelectorAll(".blog-main .blog-sidebar div:nth-child(3) ol ")
-            emptyOl.innerHTML = " "
+            emptyOl.innerHTML =" "
         }
         removeLinks()
+       // EX15) Write a function to change the column size for heading in jumbotron
+         // EX16) Write a function to remove the "Search" magnifying glass icon
+          const removeSearchIcon = function(){
+              let findSearchIcon = document.querySelector(".blog-header .row div:last-of-type")
+              findSearchIcon.children[0].remove()
+          }
     </script>
   </body>
 </html>
