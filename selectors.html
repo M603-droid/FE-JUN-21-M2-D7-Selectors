@@ -496,8 +496,23 @@
         EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name
     */
     // EX11) Write a function to add a new link into the navbar
-  
+    const addingNewLink = function(){  
+        let parent = document.querySelector(".nav")
+        let a = `<a class="p-2 text-muted" href="#">new link</a>` 
+        parent.innerHTML += a
+}
 
+//        EX12) Write a function to change the color of the main title
+    const changeColorOfHeading = function(){
+        const newH1 = document.querySelector("h1")
+        newH1.style.color="blue"
+}  
+//        EX13) Write a function to change the background of the jumbotron
+
+  const changeBackground = function(){
+      const itemToChangeColor = document.querySelector(".jumbotron")
+      itemToChangeColor.classList.remove("bg-dark")
+      itemToChangeColor.classList.remove("text-white")  }
 
     </script>
   </body>
